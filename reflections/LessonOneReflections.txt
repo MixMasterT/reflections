@@ -1,0 +1,46 @@
+How did using diff help reveal a bug in the code?
+
+Looking at a working, and non-working file side-by-side, it is easier to spot the problem when all of the idenical
+lines can be ignored. The diff command made this much easier, because it's output indicated where changes had been
+made. Then from there, simply scanning the changes made it clear where the error was introduced.
+
+How can easy access to all of the history of a file make you into a more efficient programmer?
+
+Being able to access older versions could be very useful for reworking problem spots. I have had many experiences
+where I erased or changed good working code becausee I thought it wasn't working. Then, when I realized that the
+problems I was experiencing had other explanations, I had no way to go back to the structure I had in place before.
+I spent the time to recreate these solutions in the past. With better version control, that time would have been 
+saved. 
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, 
+vs having versions automatically saved, like Google docs does?
+
+The pros of manual saving is that you can control when to commit an update. If the save is clock-managed, it may 
+log incomplete versions or keep logging the same version. Manual commits let the user save after each meaningful 
+update. The con for this is that the user must remember to do so. Bad habits could lead to too few logs, and lost 
+middle ground. Also, poor judgement about when to commit could still lead to excess logging or missed moments.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, 
+like Google Docs, treat each file separately?
+
+Version control systems like Git support 'repositories' or ways of grouping files together, because coding projects
+require integrated files. An css page is meaningless without some html to go with, and likewise for javascript.
+Other types of projects might also require a similar feature, such as a lawyer's notes for a case, which may require
+factual documents, as well as notes, comments, and questions put together by the lawyer or a paralegal. These documents
+would similarly belong together, and need to be saved in sets.
+
+How can you use the commands git log and git diff to view the history of files?
+
+git log will show all of the updates that have been logged on the repository. This will be useful to find the ID of a 
+given commit. The short description of each commit is very important for scanning a log file. Those short descrptions
+are very important! git diff will help to zero in on what change have been made between any two commits. Activating 
+the --global color.ui flag makes the diff output much more readable.
+
+How might using version control make you more confident to make changes that could break something?
+
+Version control is like having a built-in revert or reset button. This would make me feel more confident to try new approaches because I can always go back to a working model if my new idea doesn't pan out. In the past I could do this with a simple save-as. I guess that was my own version control feature. I do recall sometimes ending up going awry with that approach however... I hope I have better luck with Git!~)
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Honestly, I still don't see the advantage of using Git. I did pretty well with my own save-as approach. The real reason that I want to use git is so that I can interact with others and do multi-user projects, rather than just coding alone...
+

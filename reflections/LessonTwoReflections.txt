@@ -1,0 +1,5 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When a repository is initialized, a .git file is added into the directory, and key meta information is stored in that file.
+That file is the key to git handling version control on that directory.
+
