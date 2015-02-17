@@ -3,3 +3,9 @@ What happens when you initialize a repository? Why do you need to do it?
 When a repository is initialized, a .git file is added into the directory, and key meta information is stored in that file.
 That file is the key to git handling version control on that directory.
 
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The working directory is the currently available set of files (the checked-out committ). The repository is a set of 
+files from different times, and it is managed by the .git file stored in the working directory. The staging area is 
+a list of files that have been chosen to included in the next commit. This helps the user choose what files should
+and what files shouldn't be included in a given committ.
