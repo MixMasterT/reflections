@@ -9,3 +9,26 @@ The working directory is the currently available set of files (the checked-out c
 files from different times, and it is managed by the .git file stored in the working directory. The staging area is 
 a list of files that have been chosen to included in the next commit. This helps the user choose what files should
 and what files shouldn't be included in a given committ.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+Look at git status, and make sure that only one logical change is represented. Then commit an update. Do this every
+time before each commit. If multiple logical changes are there, pair the staging area down and commit right away.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Branches are best suited to tenetive changes such as complex refactoring that you think might work, but aren't fully
+sure about yet. Also changes that will take a project in a new direction also might need their own branch.
+
+How do the diagrams help you visualize the branch structure?
+
+Diagrams can help me recognize how the different commits are connected to one another, and how the branch structure
+works. Also, with diagrams it is easy to see why some older commits may not be reachable from a given state. For this
+reason, it is impoortant to store commit ID histories...
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The result of merging branches is an updated master branch (or whatever you merge into), which contains all of the 
+commits from both branches. This is great for keeping track of and updates and feature development, but the problem 
+is it makes the log messy. Better understanding of how to use 'git show', and other commands make this less of a 
+problem.
