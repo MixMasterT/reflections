@@ -1,0 +1,5 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+Remote repositories are both a good way to back up your local work, and a good way to share your work with others.
+The only times you wouldn't want to push your content up to the hub would be if you want to keep them secret. If you want
+to share the work with others easily, or if you want extra back-up, uploading to GitHub is a good idea!
