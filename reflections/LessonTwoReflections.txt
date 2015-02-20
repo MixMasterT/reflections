@@ -32,3 +32,10 @@ The result of merging branches is an updated master branch (or whatever you merg
 commits from both branches. This is great for keeping track of and updates and feature development, but the problem 
 is it makes the log messy. Better understanding of how to use 'git show', and other commands make this less of a 
 problem.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Automatic merging makes it much easier for teams of people to keep up with a master version. As new features, or 
+functionality are added, project trial versions of a software can be merged with a master to keep an up-to-date 
+version available. Manual merges would be very time consuming, especially with larger projects. However, error messages
+related to the computers inability to determine which version is meant to stay can be a real pain.
